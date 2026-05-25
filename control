@@ -1,0 +1,9 @@
+Package: com.if-she.cydia.vcam
+Name: VCAM4iOS
+Version: 0.0.1
+Architecture: iphoneos-arm64
+Description: VCAM4iOS
+Maintainer: trizau
+Author: trizau
+Section: Tweaks
+Depends: mobilesubstrate | org.coolstar.libhooker | com.ex.substitute
