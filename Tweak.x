@@ -15,8 +15,8 @@ static AVCaptureVideoOrientation g_photoOrientation = AVCaptureVideoOrientationP
 
 #import <mach-o/dyld.h>
 
-NSString *g_isMirroredMark = @"/var/jb/var/mobile/Library/Preferences/vcam_is_mirrored_mark";
-NSString *g_tempFile = @"/var/jb/var/mobile/Library/Preferences/temp.mov";
+NSString *g_isMirroredMark = @"/var/jb/var/mobile/Library/Caches/vcam_is_mirrored_mark";
+NSString *g_tempFile = @"/var/jb/var/mobile/Library/Caches/temp.mov";
 
 
 @interface GetFrame : NSObject
@@ -79,11 +79,7 @@ NSString *g_tempFile = @"/var/jb/var/mobile/Library/Preferences/temp.mov";
         g_bufferReload = NO;
         @try{
             // AVAsset *asset = [AVAsset assetWithURL: [NSURL URLWithString:downloadFilePath]];
-            // Copy to local app temp dir to allow mediaserverd (AVAssetReader) to read the video bypassing sandbox
-            NSString *localTemp = [NSTemporaryDirectory() stringByAppendingPathComponent:@"vcam_temp.mov"];
-            if ([g_fileManager fileExistsAtPath:localTemp]) [g_fileManager removeItemAtPath:localTemp error:nil];
-            [g_fileManager copyItemAtPath:g_tempFile toPath:localTemp error:nil];
-            AVAsset *asset = [AVAsset assetWithURL: [NSURL fileURLWithPath:localTemp]];
+            AVAsset *asset = [AVAsset assetWithURL: [NSURL URLWithString:[NSString stringWithFormat:@"file://%@", g_tempFile]]];
             reader = [AVAssetReader assetReaderWithAsset:asset error:nil];
             
             AVAssetTrack *videoTrack = [[asset tracksWithMediaType:AVMediaTypeVideo] firstObject]; // lấy track video
@@ -889,8 +885,8 @@ void ui_downloadVideo(){
             }
         }
     }
-    g_isMirroredMark = [NSString stringWithFormat:@"%@/var/mobile/Library/Preferences/vcam_is_mirrored_mark", jbroot];
-    g_tempFile = [NSString stringWithFormat:@"%@/var/mobile/Library/Preferences/temp.mov", jbroot];
+    g_isMirroredMark = [NSString stringWithFormat:@"%@/var/mobile/Library/Caches/vcam_is_mirrored_mark", jbroot];
+    g_tempFile = [NSString stringWithFormat:@"%@/var/mobile/Library/Caches/temp.mov", jbroot];
 
     if([[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){13, 0, 0}]) {
         %init(VolumeControl = NSClassFromString(@"SBVolumeControl"));

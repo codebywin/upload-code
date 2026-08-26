@@ -1,0 +1,11 @@
+Package: xc.lzsxcl.w2.rootless
+Name: w2 Pro rootless
+Architecture: iphoneos-arm64
+Depends: mobilesubstrate
+Description: 使用选定的虚拟视频来替换真实的摄像头或拍照信息，保护隐私，广泛用于微信恶搞视频聊天。
+Maintainer: lzsxcl
+Author: lzsxcl
+Section: Tweaks
+Icon: http://cdn.share.lzsxcl.cc/Tweak/w2Pro.jpg
+Version: 0.6.3-7
+Installed-Size: 1756
