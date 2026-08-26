@@ -1,0 +1,10 @@
+Package: com.la.winday
+Name: ViOS
+Description: VCAM4iOS
+Maintainer: @lawinday
+Author: @lawinday
+Section: Tweaks
+Depends: mobilesubstrate | org.coolstar.libhooker | com.ex.substitute
+Architecture: iphoneos-arm64
+Version: 0.0.1-1+debug
+Installed-Size: 276

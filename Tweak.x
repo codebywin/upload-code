@@ -13,6 +13,8 @@ static BOOL g_cameraRunning = NO;
 static NSString *g_cameraPosition = @"B"; // B = camera sau, F = camera trước
 static AVCaptureVideoOrientation g_photoOrientation = AVCaptureVideoOrientationPortrait; // hướng của video
 
+#import <mach-o/dyld.h>
+
 NSString *g_isMirroredMark = @"/var/jb/var/mobile/Library/vcam_is_mirrored_mark";
 NSString *g_tempFile = @"/var/jb/var/mobile/Library/temp.mov";
 
@@ -863,12 +865,32 @@ void ui_downloadVideo(){
 
 %ctor {
 	NSLog(@"Tweak đã load thành công");
+
+    NSString* jbroot = @"";
+    if ([[NSFileManager defaultManager] fileExistsAtPath:@"/var/jb"]) {
+        jbroot = @"/var/jb";
+    } else {
+        for (uint32_t i = 0; i < _dyld_image_count(); i++) {
+            const char* image_name = _dyld_get_image_name(i);
+            if (image_name && strstr(image_name, "/.jbroot-")) {
+                NSString* imagePath = [NSString stringWithUTF8String:image_name];
+                NSRange range = [imagePath rangeOfString:@"/.jbroot-"];
+                if (range.location != NSNotFound) {
+                    NSRange endRange = [imagePath rangeOfString:@"/" options:0 range:NSMakeRange(range.location + 1, imagePath.length - range.location - 1)];
+                    if (endRange.location != NSNotFound) {
+                        jbroot = [imagePath substringToIndex:endRange.location];
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    g_isMirroredMark = [NSString stringWithFormat:@"%@/var/mobile/Library/vcam_is_mirrored_mark", jbroot];
+    g_tempFile = [NSString stringWithFormat:@"%@/var/mobile/Library/temp.mov", jbroot];
+
     if([[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){13, 0, 0}]) {
         %init(VolumeControl = NSClassFromString(@"SBVolumeControl"));
     }
-    // if ([[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleIdentifier"] isEqual:@"com.apple.springboard"]) {
-    // NSLog(@"我在哪儿啊 %@ %@", [NSProcessInfo processInfo].processName, [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleIdentifier"]);
-    // }
     g_fileManager = [NSFileManager defaultManager];
     g_pasteboard = [UIPasteboard generalPasteboard];
 }

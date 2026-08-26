@@ -1,0 +1,32 @@
+name: Build VCam Roothide
+
+on:
+  push:
+    branches: [ "*" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Theos
+        run: |
+          git clone --recursive https://github.com/roothide/theos.git $GITHUB_WORKSPACE/theos
+          curl -LO https://github.com/theos/sdks/archive/master.zip
+          TMP=$(mktemp -d)
+          unzip master.zip -d $TMP
+          mv $TMP/sdks-master/* $GITHUB_WORKSPACE/theos/sdks/
+          echo "THEOS=$GITHUB_WORKSPACE/theos" >> $GITHUB_ENV
+
+      - name: Build Tweak
+        run: |
+          make package FINALPACKAGE=1
+          
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Vcam-Roothide-Tweak
+          path: packages/*.deb

@@ -1,0 +1,99 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/win/Code/iOS/Vcam-rootless-lawinday/.theos/obj/debug/arm64/TTtest.dylib'
+relocations:
+  - { offset: 0x37, size: 0x8, addend: 0x0, symName: _g_fileManager, symObjAddr: 0x234E8, symBinAddr: 0x14A60, symSize: 0x0 }
+  - { offset: 0x113, size: 0x8, addend: 0x0, symName: _g_pasteboard, symObjAddr: 0x234F0, symBinAddr: 0x14A68, symSize: 0x0 }
+  - { offset: 0xF6D, size: 0x8, addend: 0x0, symName: _g_previewLayer, symObjAddr: 0x234F8, symBinAddr: 0x14A70, symSize: 0x0 }
+  - { offset: 0x142F, size: 0x8, addend: 0x0, symName: _g_cameraPosition, symObjAddr: 0x7020, symBinAddr: 0x14910, symSize: 0x0 }
+  - { offset: 0x1444, size: 0x8, addend: 0x0, symName: _g_isMirroredMark, symObjAddr: 0x7028, symBinAddr: 0x14918, symSize: 0x0 }
+  - { offset: 0x1459, size: 0x8, addend: 0x0, symName: _g_tempFile, symObjAddr: 0x7030, symBinAddr: 0x14920, symSize: 0x0 }
+  - { offset: 0x1462, size: 0x8, addend: 0x0, symName: '+[GetFrame getCurrentFrame::]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xB84 }
+  - { offset: 0x148B, size: 0x8, addend: 0x0, symName: '_getCurrentFrame::.reader', symObjAddr: 0x23500, symBinAddr: 0x14A78, symSize: 0x0 }
+  - { offset: 0x14A0, size: 0x8, addend: 0x0, symName: '_getCurrentFrame::.videoTrackout_32BGRA', symObjAddr: 0x23508, symBinAddr: 0x14A80, symSize: 0x0 }
+  - { offset: 0x14B5, size: 0x8, addend: 0x0, symName: '_getCurrentFrame::.videoTrackout_420YpCbCr8BiPlanarVideoRange', symObjAddr: 0x23510, symBinAddr: 0x14A88, symSize: 0x0 }
+  - { offset: 0x14CA, size: 0x8, addend: 0x0, symName: '_getCurrentFrame::.videoTrackout_420YpCbCr8BiPlanarFullRange', symObjAddr: 0x23518, symBinAddr: 0x14A90, symSize: 0x0 }
+  - { offset: 0x14DF, size: 0x8, addend: 0x0, symName: '_getCurrentFrame::.sampleBuffer', symObjAddr: 0x23520, symBinAddr: 0x14A98, symSize: 0x0 }
+  - { offset: 0x14F4, size: 0x8, addend: 0x0, symName: '_getCurrentFrame::.renewTime', symObjAddr: 0x23528, symBinAddr: 0x14AA0, symSize: 0x0 }
+  - { offset: 0x1AEB, size: 0x8, addend: 0x0, symName: _g_maskLayer, symObjAddr: 0x23608, symBinAddr: 0x14B80, symSize: 0x0 }
+  - { offset: 0x1B01, size: 0x8, addend: 0x0, symName: _g_downloadAddress, symObjAddr: 0x7160, symBinAddr: 0x14A50, symSize: 0x0 }
+  - { offset: 0x1B0A, size: 0x8, addend: 0x0, symName: _ui_selectVideo, symObjAddr: 0x10F0, symBinAddr: 0x50F0, symSize: 0x1A8 }
+  - { offset: 0x1B2D, size: 0x8, addend: 0x0, symName: _ui_selectVideo.delegate, symObjAddr: 0x23530, symBinAddr: 0x14AA8, symSize: 0x0 }
+  - { offset: 0x1B68, size: 0x8, addend: 0x0, symName: '__logos_orig$_ungrouped$AVCaptureVideoPreviewLayer$addSublayer$', symObjAddr: 0x23540, symBinAddr: 0x14AB8, symSize: 0x0 }
+  - { offset: 0x1FD5, size: 0x8, addend: 0x0, symName: '__logos_orig$_ungrouped$AVCaptureSession$startRunning', symObjAddr: 0x23548, symBinAddr: 0x14AC0, symSize: 0x0 }
+  - { offset: 0x2000, size: 0x8, addend: 0x0, symName: '__logos_orig$_ungrouped$AVCaptureSession$stopRunning', symObjAddr: 0x23550, symBinAddr: 0x14AC8, symSize: 0x0 }
+  - { offset: 0x2015, size: 0x8, addend: 0x0, symName: '__logos_orig$_ungrouped$AVCaptureSession$addInput$', symObjAddr: 0x23558, symBinAddr: 0x14AD0, symSize: 0x0 }
+  - { offset: 0x23F0, size: 0x8, addend: 0x0, symName: '__logos_orig$_ungrouped$AVCaptureSession$addOutput$', symObjAddr: 0x23560, symBinAddr: 0x14AD8, symSize: 0x0 }
+  - { offset: 0x241B, size: 0x8, addend: 0x0, symName: '__logos_orig$_ungrouped$AVCaptureStillImageOutput$captureStillImageAsynchronouslyFromConnection$completionHandler$', symObjAddr: 0x23568, symBinAddr: 0x14AE0, symSize: 0x0 }
+  - { offset: 0x255C, size: 0x8, addend: 0x0, symName: '__logos_meta_orig$_ungrouped$AVCaptureStillImageOutput$jpegStillImageNSDataRepresentation$', symObjAddr: 0x23570, symBinAddr: 0x14AE8, symSize: 0x0 }
+  - { offset: 0x2590, size: 0x8, addend: 0x0, symName: '__logos_meta_orig$_ungrouped$AVCapturePhotoOutput$JPEGPhotoDataRepresentationForJPEGSampleBuffer$previewPhotoSampleBuffer$', symObjAddr: 0x23578, symBinAddr: 0x14AF0, symSize: 0x0 }
+  - { offset: 0x25C4, size: 0x8, addend: 0x0, symName: '__logos_orig$_ungrouped$AVCapturePhotoOutput$capturePhotoWithSettings$delegate$', symObjAddr: 0x23580, symBinAddr: 0x14AF8, symSize: 0x0 }
+  - { offset: 0x2ACA, size: 0x8, addend: 0x0, symName: '__logos_orig$_ungrouped$AVCaptureVideoDataOutput$setSampleBufferDelegate$queue$', symObjAddr: 0x23588, symBinAddr: 0x14B00, symSize: 0x0 }
+  - { offset: 0x2BAF, size: 0x8, addend: 0x0, symName: '__logos_orig$_ungrouped$VolumeControl$increaseVolume', symObjAddr: 0x23590, symBinAddr: 0x14B08, symSize: 0x0 }
+  - { offset: 0x2BDA, size: 0x8, addend: 0x0, symName: '__logos_orig$_ungrouped$VolumeControl$decreaseVolume', symObjAddr: 0x23598, symBinAddr: 0x14B10, symSize: 0x0 }
+  - { offset: 0x2BEF, size: 0x8, addend: 0x0, symName: _g_canReleaseBuffer, symObjAddr: 0x7038, symBinAddr: 0x14928, symSize: 0x0 }
+  - { offset: 0x2C04, size: 0x8, addend: 0x0, symName: _g_bufferReload, symObjAddr: 0x7039, symBinAddr: 0x14929, symSize: 0x0 }
+  - { offset: 0x2C1A, size: 0x8, addend: 0x0, symName: _g_downloadRunning, symObjAddr: 0x23538, symBinAddr: 0x14AB0, symSize: 0x0 }
+  - { offset: 0x2C23, size: 0x8, addend: 0x0, symName: '__logos_method$_ungrouped$AVCaptureVideoPreviewLayer$addSublayer$', symObjAddr: 0x1BC8, symBinAddr: 0x5BC8, symSize: 0x26C }
+  - { offset: 0x2C44, size: 0x8, addend: 0x0, symName: '__logos_method$_ungrouped$AVCaptureVideoPreviewLayer$addSublayer$.displayLink', symObjAddr: 0x235B8, symBinAddr: 0x14B30, symSize: 0x0 }
+  - { offset: 0x2D4D, size: 0x8, addend: 0x0, symName: '__logos_method$_ungrouped$AVCaptureVideoPreviewLayer$step$', symObjAddr: 0x1E34, symBinAddr: 0x5E34, symSize: 0x780 }
+  - { offset: 0x2D6F, size: 0x8, addend: 0x0, symName: '__logos_method$_ungrouped$AVCaptureVideoPreviewLayer$step$.refreshTime', symObjAddr: 0x235C0, symBinAddr: 0x14B38, symSize: 0x0 }
+  - { offset: 0x2D85, size: 0x8, addend: 0x0, symName: '__logos_method$_ungrouped$AVCaptureVideoPreviewLayer$step$.copyBuffer', symObjAddr: 0x235C8, symBinAddr: 0x14B40, symSize: 0x0 }
+  - { offset: 0x2E57, size: 0x8, addend: 0x0, symName: _g_photoOrientation, symObjAddr: 0x7168, symBinAddr: 0x14A58, symSize: 0x0 }
+  - { offset: 0x2E60, size: 0x8, addend: 0x0, symName: '__logos_method$_ungrouped$AVCapturePhotoOutput$capturePhotoWithSettings$delegate$', symObjAddr: 0x2F60, symBinAddr: 0x6F60, symSize: 0x45C }
+  - { offset: 0x2E83, size: 0x8, addend: 0x0, symName: '__logos_method$_ungrouped$AVCapturePhotoOutput$capturePhotoWithSettings$delegate$.hooked', symObjAddr: 0x235D0, symBinAddr: 0x14B48, symSize: 0x0 }
+  - { offset: 0x2F38, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$AVCapturePhotoOutput$capturePhotoWithSettings$delegate$_block_invoke_2', symObjAddr: 0x4320, symBinAddr: 0x8320, symSize: 0xA38 }
+  - { offset: 0x2F5F, size: 0x8, addend: 0x0, symName: _g_photoOrientation_block_invoke.copyBuffer, symObjAddr: 0x235D8, symBinAddr: 0x14B50, symSize: 0x0 }
+  - { offset: 0x3120, size: 0x8, addend: 0x0, symName: '__logos_method$_ungrouped$AVCaptureVideoDataOutput$setSampleBufferDelegate$queue$', symObjAddr: 0x33BC, symBinAddr: 0x73BC, symSize: 0x244 }
+  - { offset: 0x3143, size: 0x8, addend: 0x0, symName: '__logos_method$_ungrouped$AVCaptureVideoDataOutput$setSampleBufferDelegate$queue$.hooked', symObjAddr: 0x235E0, symBinAddr: 0x14B58, symSize: 0x0 }
+  - { offset: 0x31B3, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$AVCaptureVideoDataOutput$setSampleBufferDelegate$queue$_block_invoke', symObjAddr: 0x5320, symBinAddr: 0x9320, symSize: 0x4EC }
+  - { offset: 0x31DA, size: 0x8, addend: 0x0, symName: _g_photoOrientation_block_invoke_2.oldTime, symObjAddr: 0x235E8, symBinAddr: 0x14B60, symSize: 0x0 }
+  - { offset: 0x32F8, size: 0x8, addend: 0x0, symName: _g_volume_down_time, symObjAddr: 0x235F0, symBinAddr: 0x14B68, symSize: 0x0 }
+  - { offset: 0x330E, size: 0x8, addend: 0x0, symName: _g_volume_up_time, symObjAddr: 0x235F8, symBinAddr: 0x14B70, symSize: 0x0 }
+  - { offset: 0x3317, size: 0x8, addend: 0x0, symName: '__logos_method$_ungrouped$VolumeControl$decreaseVolume', symObjAddr: 0x36E8, symBinAddr: 0x76E8, symSize: 0x57C }
+  - { offset: 0x333A, size: 0x8, addend: 0x0, symName: '__logos_method$_ungrouped$VolumeControl$decreaseVolume.delegate', symObjAddr: 0x23600, symBinAddr: 0x14B78, symSize: 0x0 }
+  - { offset: 0x3456, size: 0x8, addend: 0x0, symName: _g_refreshPreviewByVideoDataOutputTime, symObjAddr: 0x235A0, symBinAddr: 0x14B18, symSize: 0x0 }
+  - { offset: 0x346B, size: 0x8, addend: 0x0, symName: _g_cameraRunning, symObjAddr: 0x235A8, symBinAddr: 0x14B20, symSize: 0x0 }
+  - { offset: 0x3D22, size: 0x8, addend: 0x0, symName: '+[GetFrame getKeyWindow]', symObjAddr: 0xB84, symBinAddr: 0x4B84, symSize: 0x24C }
+  - { offset: 0x3D9B, size: 0x8, addend: 0x0, symName: '-[CCUIImagePickerDelegate imagePickerController:didFinishPickingMediaWithInfo:]', symObjAddr: 0xDD0, symBinAddr: 0x4DD0, symSize: 0x270 }
+  - { offset: 0x3DFB, size: 0x8, addend: 0x0, symName: '-[CCUIImagePickerDelegate imagePickerControllerDidCancel:]', symObjAddr: 0x1040, symBinAddr: 0x5040, symSize: 0xB0 }
+  - { offset: 0x3E3D, size: 0x8, addend: 0x0, symName: _ui_downloadVideo, symObjAddr: 0x1298, symBinAddr: 0x5298, symSize: 0x84 }
+  - { offset: 0x3E6F, size: 0x8, addend: 0x0, symName: ___ui_downloadVideo_block_invoke, symObjAddr: 0x131C, symBinAddr: 0x531C, symSize: 0x488 }
+  - { offset: 0x3F04, size: 0x8, addend: 0x0, symName: __logosLocalCtor_84dce24f, symObjAddr: 0x17A4, symBinAddr: 0x57A4, symSize: 0x424 }
+  - { offset: 0x401E, size: 0x8, addend: 0x0, symName: '__logos_method$_ungrouped$AVCaptureSession$startRunning', symObjAddr: 0x25B4, symBinAddr: 0x65B4, symSize: 0xD0 }
+  - { offset: 0x4053, size: 0x8, addend: 0x0, symName: '__logos_method$_ungrouped$AVCaptureSession$stopRunning', symObjAddr: 0x2684, symBinAddr: 0x6684, symSize: 0x48 }
+  - { offset: 0x4088, size: 0x8, addend: 0x0, symName: '__logos_method$_ungrouped$AVCaptureSession$addInput$', symObjAddr: 0x26CC, symBinAddr: 0x66CC, symSize: 0x100 }
+  - { offset: 0x40CC, size: 0x8, addend: 0x0, symName: '__logos_method$_ungrouped$AVCaptureSession$addOutput$', symObjAddr: 0x27CC, symBinAddr: 0x67CC, symSize: 0x7C }
+  - { offset: 0x4110, size: 0x8, addend: 0x0, symName: '__logos_method$_ungrouped$AVCaptureStillImageOutput$captureStillImageAsynchronouslyFromConnection$completionHandler$', symObjAddr: 0x2848, symBinAddr: 0x6848, symSize: 0x188 }
+  - { offset: 0x4172, size: 0x8, addend: 0x0, symName: '__logos_meta_method$_ungrouped$AVCaptureStillImageOutput$jpegStillImageNSDataRepresentation$', symObjAddr: 0x29D0, symBinAddr: 0x69D0, symSize: 0x2C4 }
+  - { offset: 0x4213, size: 0x8, addend: 0x0, symName: '__logos_meta_method$_ungrouped$AVCapturePhotoOutput$JPEGPhotoDataRepresentationForJPEGSampleBuffer$previewPhotoSampleBuffer$', symObjAddr: 0x2C94, symBinAddr: 0x6C94, symSize: 0x2CC }
+  - { offset: 0x42C4, size: 0x8, addend: 0x0, symName: '__logos_method$_ungrouped$VolumeControl$increaseVolume', symObjAddr: 0x3600, symBinAddr: 0x7600, symSize: 0xE8 }
+  - { offset: 0x4308, size: 0x8, addend: 0x0, symName: __logosLocalDtor_3cb8e099, symObjAddr: 0x3C64, symBinAddr: 0x7C64, symSize: 0x8C }
+  - { offset: 0x434C, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$AVCaptureVideoPreviewLayer$addSublayer$_block_invoke', symObjAddr: 0x3CF0, symBinAddr: 0x7CF0, symSize: 0x154 }
+  - { offset: 0x4374, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$AVCaptureStillImageOutput$captureStillImageAsynchronouslyFromConnection$completionHandler$_block_invoke', symObjAddr: 0x3E44, symBinAddr: 0x7E44, symSize: 0xE4 }
+  - { offset: 0x43EB, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32b, symObjAddr: 0x3F28, symBinAddr: 0x7F28, symSize: 0x38 }
+  - { offset: 0x440F, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s, symObjAddr: 0x3F60, symBinAddr: 0x7F60, symSize: 0x2C }
+  - { offset: 0x442B, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$AVCapturePhotoOutput$capturePhotoWithSettings$delegate$_block_invoke', symObjAddr: 0x3F8C, symBinAddr: 0x7F8C, symSize: 0x1F8 }
+  - { offset: 0x4503, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32r, symObjAddr: 0x4184, symBinAddr: 0x8184, symSize: 0x38 }
+  - { offset: 0x4527, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32r, symObjAddr: 0x41BC, symBinAddr: 0x81BC, symSize: 0x2C }
+  - { offset: 0x4543, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$AVCapturePhotoOutput$capturePhotoWithSettings$delegate$_block_invoke.198', symObjAddr: 0x41E8, symBinAddr: 0x81E8, symSize: 0x138 }
+  - { offset: 0x45EF, size: 0x8, addend: 0x0, symName: ___Block_byref_object_copy_, symObjAddr: 0x4D58, symBinAddr: 0x8D58, symSize: 0x54 }
+  - { offset: 0x4613, size: 0x8, addend: 0x0, symName: ___Block_byref_object_dispose_, symObjAddr: 0x4DAC, symBinAddr: 0x8DAC, symSize: 0x2C }
+  - { offset: 0x462F, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$AVCapturePhotoOutput$capturePhotoWithSettings$delegate$_block_invoke.208', symObjAddr: 0x4DD8, symBinAddr: 0x8DD8, symSize: 0xFC }
+  - { offset: 0x46AB, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32r40r, symObjAddr: 0x4ED4, symBinAddr: 0x8ED4, symSize: 0x5C }
+  - { offset: 0x46CF, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32r40r, symObjAddr: 0x4F30, symBinAddr: 0x8F30, symSize: 0x44 }
+  - { offset: 0x46EB, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$AVCapturePhotoOutput$capturePhotoWithSettings$delegate$_block_invoke.214', symObjAddr: 0x4F74, symBinAddr: 0x8F74, symSize: 0xE0 }
+  - { offset: 0x4767, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$AVCapturePhotoOutput$capturePhotoWithSettings$delegate$_block_invoke.220', symObjAddr: 0x5054, symBinAddr: 0x9054, symSize: 0x68 }
+  - { offset: 0x47B3, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$AVCapturePhotoOutput$capturePhotoWithSettings$delegate$_block_invoke_2.227', symObjAddr: 0x50BC, symBinAddr: 0x90BC, symSize: 0xCC }
+  - { offset: 0x482F, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$AVCapturePhotoOutput$capturePhotoWithSettings$delegate$_block_invoke.233', symObjAddr: 0x5188, symBinAddr: 0x9188, symSize: 0xCC }
+  - { offset: 0x48AB, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$AVCapturePhotoOutput$capturePhotoWithSettings$delegate$_block_invoke.239', symObjAddr: 0x5254, symBinAddr: 0x9254, symSize: 0xCC }
+  - { offset: 0x4927, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$VolumeControl$decreaseVolume_block_invoke', symObjAddr: 0x580C, symBinAddr: 0x980C, symSize: 0x50 }
+  - { offset: 0x4960, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$VolumeControl$decreaseVolume_block_invoke_2', symObjAddr: 0x585C, symBinAddr: 0x985C, symSize: 0x220 }
+  - { offset: 0x49D5, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$VolumeControl$decreaseVolume_block_invoke_3', symObjAddr: 0x5A7C, symBinAddr: 0x9A7C, symSize: 0xA8 }
+  - { offset: 0x4A0E, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$VolumeControl$decreaseVolume_block_invoke_4', symObjAddr: 0x5B24, symBinAddr: 0x9B24, symSize: 0x220 }
+  - { offset: 0x4A94, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s, symObjAddr: 0x5D44, symBinAddr: 0x9D44, symSize: 0x38 }
+  - { offset: 0x4AB8, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$VolumeControl$decreaseVolume_block_invoke.291', symObjAddr: 0x5D7C, symBinAddr: 0x9D7C, symSize: 0x80 }
+  - { offset: 0x4AF1, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$VolumeControl$decreaseVolume_block_invoke_2.297', symObjAddr: 0x5DFC, symBinAddr: 0x9DFC, symSize: 0xAC }
+  - { offset: 0x4B2A, size: 0x8, addend: 0x0, symName: '____logos_method$_ungrouped$VolumeControl$decreaseVolume_block_invoke_3.301', symObjAddr: 0x5EA8, symBinAddr: 0x9EA8, symSize: 0xBC }
+  - { offset: 0x4B80, size: 0x8, addend: 0x0, symName: ___GLOBAL_init_65535, symObjAddr: 0x6200, symBinAddr: 0x9F64, symSize: 0x28 }
+...
