@@ -12,12 +12,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install Dependencies
+        run: brew install ldid dpkg make
+
       - name: Setup Theos
         run: |
           git clone --recursive https://github.com/roothide/theos.git $GITHUB_WORKSPACE/theos
           curl -LO https://github.com/theos/sdks/archive/master.zip
           TMP=$(mktemp -d)
-          unzip master.zip -d $TMP
+          unzip -q master.zip -d $TMP
           mv $TMP/sdks-master/* $GITHUB_WORKSPACE/theos/sdks/
           echo "THEOS=$GITHUB_WORKSPACE/theos" >> $GITHUB_ENV
 
